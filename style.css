@@ -1,0 +1,351 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+header .row
+{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.poster
+{
+    width: 100vw;
+    background-image: url("/assets/poster.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 3rem;
+}
+.poster .row
+{
+    width: 100%;
+    color: #cd1d1d;
+    font-family: monospace;
+    margin: auto;
+    font-size: 2rem;
+    padding: 0 2rem;
+    text-align: start;
+    height: 100%;
+}
+
+header .menu a
+{
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #cd1d1d;
+    font-weight: 600;
+}
+
+header .menu a:hover
+{
+    color: #fff;
+    font-weight: 800;
+}
+
+.about
+{
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9f1212;
+}
+.about .row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .row .card
+{
+    height: 80vh;  
+    background: #cd1d1d;
+    padding: 0;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about .row .card-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.about .row .card img
+{
+    height: 70%;
+    width: 100%;
+}
+
+.services
+{
+    height: 60vh;
+    width: 100vw;
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background: #000;
+    color: aliceblue;
+}
+
+.services .drop-to-down-eff{
+	margin-bottom: 0.5rem;
+}
+.services .drop-to-down-eff .head{
+	background-color:#da0d0d67;
+	position: relative;
+	padding:12px 15px;
+	cursor: pointer;
+}
+.services .drop-to-down-eff .head .fa{
+	position: absolute;
+	right: 10px;
+	top:13px;
+	height:30px;
+	width: 30px;
+	text-align: center;
+	line-height: 30px;
+	color:#ffffff;
+	border-radius: 50%;
+}
+.services .drop-to-down-eff .head h4{
+  font-size: 1.2rem;
+  margin:0;
+  padding:0;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.services .drop-to-down-eff.eff .head{
+  background-color: #a16868bf;	
+}
+.services .drop-to-down-eff .body{
+	display: none;
+	padding:15px;
+	background-color: #222222;
+	border-top:1px solid #333333;
+}
+.services .drop-to-down-eff:nth-child(1) .body{
+	display: block;
+}
+.services .drop-to-down-eff .body p{
+    font-size: 15px;
+	line-height:20px;
+	color:#ffffff;
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;	
+}
+
+.work-out-pho
+{
+    height: 70vh;
+    width: 100vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2rem 0;
+    background: #cd1d1d;
+    color: #fff;
+}
+
+.work-out-pho .row 
+{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-image: url('/assets/work-out-pho-1.jpg');
+    justify-content: center;
+    background-size: cover;
+    opacity: 0.5;
+    /*scale: 0.8;*/
+    overflow: hidden;
+}
+.work-out-pho .row:hover
+{
+    animation: img-change 4s infinite;
+}
+@keyframes img-change {
+    0%   {
+        border-radius: 0.5rem;
+        /*scale: 0.8;*/
+        opacity: 0.75;
+    }
+    25%  {
+        border-radius: 1rem;
+        /*scale: 0.9;*/
+        opacity: 0.75;
+    }
+    50%  {
+        border-radius: 1.5rem;
+        /*scale: 1;
+        opacity*/: 0.75;
+    }
+    100% {
+        border-radius: 2rem;
+        /*scale: 1.01;*/
+        opacity: 0.75;
+    }
+}
+
+.purchase {
+    padding: 5rem 0;
+    background: #333333;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #cd1d1d;
+}
+.purchase h1 {
+    font-weight: 800;
+}
+.purchase p{
+    color: #fff;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+.purchase .row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.purchase .row .card
+{
+    height: 80vh;  
+    background: #cd1d1d;
+    padding: 0;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.purchase .row .card-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+
+.purchase .row .card img
+{
+    height: 70%;
+    width: 100%;
+}
+.purchase .row .card .btn:hover {
+    color: #cd1d1d;
+    background: #fff;
+    font-weight: 500;
+}
+
+footer {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: #cd1d1d;
+}
+
+footer .feed
+{
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    flex-direction: column;
+
+}
+
+footer input
+{
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #ffffff;
+    margin: 1rem 0;
+    width: 80%;
+    background: transparent;
+}
+
+footer input::placeholder{
+    color: #fff;
+}
+footer .btn:hover
+{
+    color: #cd1d1d;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 0;
+    outline: none;
+}
+
+footer .container 
+{
+    display: flex;
+    align-items: start;
+    justify-items: start;
+}
+footer .det h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 2rem 0;
+}
+
+footer .det p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #fff;    
+    margin: 0 0 2rem 0;
+}
+
+footer .det i{
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    padding-right: 2rem;
+    cursor: pointer;
+}
